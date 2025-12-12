@@ -1,0 +1,81 @@
+═══════════════════════════════════════════════════════════════
+  CARA MENAMBAHKAN GAMBAR MENU - PANDUAN CEPAT
+═══════════════════════════════════════════════════════════════
+
+LANGKAH 1: Siapkan Gambar
+──────────────────────────
+- Ukuran disarankan: 800x600px atau 1200x800px
+- Format: JPG atau PNG
+- Nama file: gunakan lowercase dengan dash (contoh: salad-segar.jpg)
+- Optimasi: compress gambar untuk ukuran file lebih kecil
+
+LANGKAH 2: Simpan Gambar
+──────────────────────────
+- Simpan gambar di folder ini: frontend-only/assets/images/
+- Pastikan nama file sesuai dengan yang ada di main.js
+
+LANGKAH 3: Update main.js (jika nama berbeda)
+──────────────────────────────────────────────
+Buka file: frontend-only/assets/js/main.js
+
+Cari bagian menuData dan update property 'image':
+
+Contoh:
+{
+    name: 'Salad Segar',
+    price: 'Rp 45.000',
+    description: 'Campuran sayuran segar dengan dressing khusus',
+    category: 'appetizer',
+    image: 'assets/images/salad-segar.jpg'  ← Update path ini
+}
+
+LANGKAH 4: Refresh Browser
+──────────────────────────
+- Buka index.html di browser
+- Tekan Ctrl+F5 (Windows) atau Cmd+Shift+R (Mac) untuk hard refresh
+- Gambar akan muncul otomatis
+
+═══════════════════════════════════════════════════════════════
+  CONTOH NAMA FILE YANG BENAR
+═══════════════════════════════════════════════════════════════
+
+✅ BENAR:
+- salad-segar.jpg
+- sup-krim-jamur.jpg
+- steak-sirloin.jpg
+- pasta-carbonara.jpg
+
+❌ SALAH:
+- Salad Segar.jpg (ada spasi dan huruf besar)
+- sup_krim_jamur.jpg (menggunakan underscore)
+- Steak-Sirloin.jpg (huruf besar)
+
+═══════════════════════════════════════════════════════════════
+  MENAMBAH MENU BARU
+═══════════════════════════════════════════════════════════════
+
+1. Tambahkan gambar ke folder ini
+2. Buka main.js
+3. Tambahkan object baru di array menuData:
+
+{
+    name: 'Nama Menu Baru',
+    price: 'Rp 100.000',
+    description: 'Deskripsi menu',
+    category: 'main',  // 'appetizer', 'main', 'dessert', 'drink'
+    image: 'assets/images/nama-file-gambar.jpg'
+}
+
+4. Refresh browser
+
+═══════════════════════════════════════════════════════════════
+  TIPS
+═══════════════════════════════════════════════════════════════
+
+- Jika gambar tidak muncul, cek nama file dan path di main.js
+- Gunakan gambar berkualitas tinggi tapi dioptimasi untuk web
+- Format JPG lebih baik untuk foto makanan
+- Jika gambar tidak ditemukan, akan muncul placeholder otomatis
+
+═══════════════════════════════════════════════════════════════
+
